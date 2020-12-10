@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2020.12.7)  11 DEC 2020 00:21
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2020.12.7)  11 DEC 2020 00:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -904,18 +904,23 @@ LaTeX Font Warning: Font shape `TU/FZLongZhao-R-GB(0)/b/it' undefined
 [1
 
 ] [2] [3] [4] [5] [6] (./MCFC.aux)
-Package rerunfilecheck Info: File `MCFC.out' has not changed.
-(rerunfilecheck)             Checksum: C15FA272F29D27BE877065736FAFA3A0;352.
 
+Package rerunfilecheck Warning: File `MCFC.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MCFC.out':
+(rerunfilecheck)             Before: C15FA272F29D27BE877065736FAFA3A0;352
+(rerunfilecheck)             After:  3F35B1E7B1B308265F1BF1F1AC5F5295;384.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40307 strings out of 477299
- 993755 string characters out of 5838338
+ 40296 strings out of 477299
+ 992921 string characters out of 5838338
  1430958 words of memory out of 5000000
- 59222 multiletter control sequences out of 15000+600000
+ 59211 multiletter control sequences out of 15000+600000
  417131 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  97i,19n,100p,751b,479s stack positions out of 5000i,500n,10000p,200000b,80000s

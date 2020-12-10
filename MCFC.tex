@@ -2,7 +2,7 @@
 \usepackage{avanti}
 
 \begin{document}
-\title{匹配与覆盖、流与割}
+\title{最大匹配与最小点覆盖}
 \author{圆眼睛的阿凡提哥哥}
 \date{\today}
 \maketitle
@@ -179,7 +179,7 @@ König定理还可进一步推广，设$b$-匹配对应的表示向量满足对�
 \end{align*}
 即最大$c$-加权$b$-匹配等于最小$b$-加权$c$-点覆盖。
 
-\section{流与割}
+\section{最大流与最小割}
 
 类似于最大匹配和最小点覆盖，最大流和最小割也是一组对偶问题。给定有向流网络$\Gcal = (\Vcal, \Ecal)$、源点$s$、汇点$t$，设$\delta_{\text{in}}(v)$是以点$v$为终点的入边集合、$\delta_{\text{out}}(v)$是以点$v$为起点的出边集合，$\Av \in \{ 0, \pm 1 \}^{|\Vcal| \times |\Ecal|}$是$\Gcal$对应的关联矩阵，即
 \begin{align*}
