@@ -12,7 +12,7 @@
 设$\Av \in \{ 0,1 \}^{|\Vcal| \times |\Ecal|}$是二部图$\Gcal$对应的关联矩阵，即$a_{v,e} = 1_{e \in \delta(v)}$，则
 \begin{align*}
     \forall v \in \Vcal, \sum_{e \in \delta(v)} x_e \le 1 & \Longleftrightarrow \Av \xv \le \ev      \\
-    \forall (u,v) \in \Ecal, ~ z_u + z_v \ge 1         & \Longleftrightarrow \Av^\top \zv \ge \ev
+    \forall (u,v) \in \Ecal, ~ z_u + z_v \ge 1            & \Longleftrightarrow \Av^\top \zv \ge \ev
 \end{align*}
 
 \section{最大匹配}
@@ -73,7 +73,7 @@
                   \end{bmatrix} + \begin{bmatrix}
                       0 \\ 0 \\ x_{e_3} - x_{e_2} \\ \vdots \\ x_{e_3} - x_{e_2} \\ \zerov
                   \end{bmatrix} + \cdots \\
-                      & = x_{e_1} \xv^{(\Mcal_1)} + (x_{e_2} - x_{e_1}) \xv^{(\Mcal_2)} + (x_{e_3} - x_{e_2}) \xv^{(\Mcal_3)}                        \\
+                      & = x_{e_1} \xv^{(\Mcal_1)} + (x_{e_2} - x_{e_1}) \xv^{(\Mcal_2)} + (x_{e_3} - x_{e_2}) \xv^{(\Mcal_3)}                       \\
                       & \qquad + \cdots + (x_{e_n} - x_{e_{n-1}}) \xv^{(\Mcal_n)} + (1 - x_{e_n}) \zerov \in \Pcal (\Gcal)
               \end{align*}
     \end{itemize}
@@ -223,14 +223,14 @@ $\wv_{\overline{st}}^\star$的维度为$|\Vcal| - 2$，与$\Av_{\overline{st}}$�
 \begin{align*}
     \cv^\top \zv^\star \ge \sum_{e \in \delta_{\Scal, \overline{\Scal}}} c_e z_e^\star \ge \sum_{e \in \delta_{\Scal, \overline{\Scal}}} c_e \ge \sum_{e \in \delta_{\Scal, \overline{\Scal}}} x_e^\star \ge \sum_{e \in \delta_{\text{in}}(t)} x_e^\star = \Av_t \xv^\star \ge \cv^\top \zv^\star
 \end{align*}
-其中第一个不等号是因为$z_e^\star \ge 0$；第二个不等号是因为对任意$e \in \delta_{\Scal, \overline{\Scal}}$有$z_e^\star \ge 1$；第三个不等号是因为$c_e$是边$e$的流量上限；第四个不等号是因为从$\Scal$到$\overline{\Scal}$的流量未必会全部进入汇点，可能会有一部分通过从$\overline{\Scal}$到$\Scal$的有向边再折回$\Scal$；第五个不等号是因为弱对偶性。
+其中第一个不等号是因为$z_e^\star \ge 0$；第二个不等号是因为对任意$e \in \delta_{\Scal, \overline{\Scal}}$有$z_e^\star \ge 1$；第三个不等号是因为$c_e$是边$e$的流量上限；第四个不等号是因为从$\Scal$到$\overline{\Scal}$的流量未必会全部进入汇点，可能会有一部分通过从$\overline{\Scal}$到$\Scal$的边再折回$\Scal$；第五个不等号是因为弱对偶性。
 
 综上所有的不等号都取等号，由此可以得到一些有趣的结论：
 \begin{itemize}
-    \item 根据第一个不等号取等号，对任意$e \not \in \delta_{\Scal, \overline{\Scal}}$有$z_e^\star = 0$，特别的对$\Scal$内部的任意有向边$e$都有$z_e^\star = 0$，设$e = (s,v)$是以$s$为起点的某个有向边，易知有$0 = z_e^\star \ge w_s^\star - w_v^\star = 0 - w_v^\star$，而对任意$\Scal$中的点$v$均有$w_v^\star \ge 0$，因此$w_v^\star = 0$，以此类推，对$\Scal$中的任意点$v$都有$w_v^\star = 0$
-    \item 根据第二个不等号取等号，对任意$e \in \delta_{\Scal, \overline{\Scal}}$有$z_e^\star = 1$；
-    \item 根据第三个不等号取等号，当流量达到最大时，从$\Scal$到$\overline{\Scal}$的每条有向边上的流量都达到上限；
-    \item 根据第四个不等号取等号，从$\Scal$到$\overline{\Scal}$的流量全部进入汇点，不存在折回$\Scal$的情况，即$\overline{\Scal}$到$\Scal$的有向边上的流量都是零；
+    \item 根据第一个不等号取等号，对任意$e \not \in \delta_{\Scal, \overline{\Scal}}$有$z_e^\star = 0$，即对任意$\Scal$内部的边$e$、$\overline{\Scal}$内部的边$e$、$\delta_{\overline{\Scal}, \Scal}$中的边$e$，都有$z_e^\star = 0$；
+    \item 根据第二个不等号取等号，对任意$e = (u,v) \in \delta_{\Scal, \overline{\Scal}}$有$z_e^\star = 1$，故只可能是$w_u^\star = 0$、$w_v^\star = -1$，于是对任意$\Scal$内部的边$e = (p, u)$，必然有$w_p^\star = 0$，否则$z_e^\star \ge w_p^\star - w_u^\star > 0$，与前一个结论矛盾，依此类推，对所有$\Scal$中的点$u$都有$w_u^\star = 0$。同理，对所有$\overline{\Scal}$中的点$v$都有$w_v^\star = -1$；
+    \item 根据第三个不等号取等号，当流量达到最大时，$\delta_{\Scal, \overline{\Scal}}$中的每条边上的流量都达到上限，这个也可由互补松弛条件$z_e (x_e - c_e) = 0$得到：$z_e^\star = 1 > 0 \Longrightarrow x_e^\star = c_e$；
+    \item 根据第四个不等号取等号，从$\Scal$到$\overline{\Scal}$的流量全部进入$t$，不存在折回$\Scal$的情况，即$\delta_{\overline{\Scal}, \Scal}$中的每条边上的流量都是零，这个也可由互补松弛条件$y_e x_e = 0$得到：注意此时$z_e^\star = 0 > -1 = w_u^\star - w_v^\star$，故$y_e^\star = z_e^\star - (w_u^\star - w_v^\star) > 0$，从而$x_e^\star = 0$。
 \end{itemize}
 
 

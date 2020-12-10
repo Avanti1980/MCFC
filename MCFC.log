@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2020.12.7)  10 DEC 2020 22:44
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2020.12.7)  11 DEC 2020 00:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -789,8 +789,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \symCJKmath=\mathgroup255
 LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 (Font)                  TU/FZLongZhao-R-GB(0)/m/n --> TU/FZLongZhao-R-GB(0)/b/n on input line 4.
-
-No file MCFC.aux.
+ (./MCFC.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
@@ -811,7 +810,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 4.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -888,13 +887,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
+ (./MCFC.out) (./MCFC.out)
 \@outlinefile=\write4
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
@@ -902,52 +898,24 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Reference `eq: relax-max-matching' on page 1 undefined on input line 28.
-
-
-LaTeX Warning: Reference `eq: max-matching' on page 1 undefined on input line 28.
-
-
 LaTeX Font Warning: Font shape `TU/FZLongZhao-R-GB(0)/b/it' undefined
 (Font)              using `TU/FZLongZhao-R-GB(0)/b/n' instead on input line 41.
 
 [1
 
-] [2]
+] [2] [3] [4] [5] [6] (./MCFC.aux)
+Package rerunfilecheck Info: File `MCFC.out' has not changed.
+(rerunfilecheck)             Checksum: C15FA272F29D27BE877065736FAFA3A0;352.
 
-LaTeX Warning: Reference `thm: extreme-point-perfect-matching' on page 3 undefined on input line 129.
-
-[3]
-
-LaTeX Warning: Reference `eq: relax-min-vertex-cover' on page 4 undefined on input line 149.
-
-
-LaTeX Warning: Reference `eq: min-vertex-cover' on page 4 undefined on input line 149.
-
-[4] [5] [6] (./MCFC.aux)
-
-Package rerunfilecheck Warning: File `MCFC.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MCFC.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C15FA272F29D27BE877065736FAFA3A0;352.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 40317 strings out of 477299
- 993765 string characters out of 5838338
- 1430459 words of memory out of 5000000
- 59238 multiletter control sequences out of 15000+600000
+ 40307 strings out of 477299
+ 993755 string characters out of 5838338
+ 1430958 words of memory out of 5000000
+ 59222 multiletter control sequences out of 15000+600000
  417131 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  97i,19n,100p,751b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
